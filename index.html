@@ -38,7 +38,7 @@
         function on(led, ip) {
             $.ajax({
                 type: "GET",
-                url: "http://kjjt.asia/mqttdk.php",
+                url: "https://kjjt.asia/mqttdk.php",
                 data: { "keyword": 1, "topic": led, "ip": ip },
                 dataType: "text",
                 success: function (data) {
@@ -51,7 +51,7 @@
         function off(led, ip) {
             $.ajax({
                 type: "GET",
-                url: "http://kjjt.asia/mqttdk.php",
+                url: "https://kjjt.asia/mqttdk.php",
                 data: { "keyword": 0, "topic": led, "ip": ip },
                 dataType: "text",
                 success: function (data) {
